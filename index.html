@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost/Mi%20pagina/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" type="text/css" href="./index_files/estilos.css">
+	<title>LINEA DE RPODUCCION </title>
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<body>
+	
+<div><h1 class="centrar">LINEA DE PRODUCCION DE UNA CASA</h1></div>
+
+<h2 class="ali">INTRODUCCION</h2>
+
+<img width="500" id="img1" src="./index_files/casa11.jpg"><p class="cua">  <br> <br> <br>  Las lineas de produccion nos dan la facilidad para ejecutar innumerables tareas en la industria. Han evolucionado para optimizar los procesos, lo cual este permite disminuir errores y mejorar la calidad final del producto, sabemos que las lineas de produccion son un grupo de operaciones en secuencia, donde se ensamblan componentes para hacer un producto terminado. De igual manera se  refiere a los materiales que pasan por un proceso de transformacion,.</p>
+
+<br>
+
+	<div class="construccion"></div>
+	<div>
+<img width="400" id="img2" src="./index_files/casa4.jpg">
+		 <h2 style="text-align: center;">ELABORACION DE CASAS</h2>
+
+
+	</div>
+	<div>
+		<h2 class="pe">
+
+	<ul class="centrar_lista"> 
+		<li>1 -Seleccionar terreno .</li>
+		<li>2 -Pedir permisos .</li>
+		<li>3 -Colocar castillos.</li>
+		<li>4 -construir Paredes .</li>
+		<li>5 -Colocar castillos.</li>
+		<li>6 -Instalaciones.</li>
+		<li>7 -Repillados externos.</li>
+		<li>8 -Acabados generales.</li>
+
+	</ul>
+	</h2>
+	</div>
+<br> <br> <br> <br> <br> <br> 
+<h2 class="centrar2">LINEA DE PRODUCCION</h2>
+<div style="text-align: center;"><img width="700" id="img3" src="./index_files/Lin_Pro.jpg"></div>
+
+<h2 class="centrar2">LINEA DE PRODUCCION CON CONCURENCIAS</h2>
+<div style="text-align: center;"><img width="700" id="img3" src="./index_files/concurrencias.jpg"></div>
+
+<h2 style="text-align: center; class=" ali2"="">CODIGO DLV</h2>
+<center>
+	    <form><input type="button" onclick="mostrar(&#39;contenido3&#39;)" value="EJECUTAR"></form>
+ <pre> $out</pre><textarea class="estilotextarea" cols="95" rows="30" id="contenido3">DLV [build BEN/Dec 17 2012   gcc 4.6.1]
+
+STATE 0: FindeObra(0), faseEnsamblado(0), piezaAcabados(1), piezaCastillo(1), piezaEstructura(1), piezaParedes(1), piezaPisos(1), piezasCimientos(1), piezasTerreno(1)
+ACTIONS: comprarTerreno, estudiarParcela, colocarDise, pedirPermisos
+STATE 1: -piezasTerreno(1), piezasCimientos(1), piezaParedes(1), piezaCastillo(1), piezaEstructura(1), piezaPisos(1), piezaAcabados(1), FindeObra(0), piezasTerreno(0), faseEnsamblado(1)
+ACTIONS: colocarCimientos, colocarCastillos, colocarDrenaje, colocarAgua
+STATE 2: -piezasCimientos(1), piezaParedes(1), piezaCastillo(1), piezaEstructura(1), piezaPisos(1), piezaAcabados(1), FindeObra(0), piezasTerreno(0), piezasCimientos(0), faseEnsamblado(2)
+ACTIONS: constParedes, colocarCadena
+STATE 3: -piezaParedes(1), piezaCastillo(1), piezaEstructura(1), piezaPisos(1), piezaAcabados(1), FindeObra(0), piezasTerreno(0), piezasCimientos(0), piezaParedes(0), faseEnsamblado(3)
+ACTIONS: colocarEscaleras, colocarTuboaInst, colocarCisterna, colocarLosas
+STATE 4: piezaCastillo(1), -piezaEstructura(1), piezaPisos(1), piezaAcabados(1), FindeObra(0), piezasTerreno(0), piezasCimientos(0), piezaParedes(0), faseEnsamblado(4)
+ACTIONS: colocarPisos, colocarRepExt
+STATE 5: piezaCastillo(1), -piezaPisos(1), piezaAcabados(1), FindeObra(0), piezasTerreno(0), piezasCimientos(0), piezaParedes(0), piezaPisos(0), faseEnsamblado(5)
+ACTIONS: colocarAcabadosGen
+STATE 6: piezaCastillo(1), -piezaAcabados(1), FindeObra(0), piezasTerreno(0), piezasCimientos(0), piezaParedes(0), piezaPisos(0), piezaAcabados(0), faseEnsamblado(6)
+ACTIONS: final
+STATE 7: piezaCastillo(1), -FindeObra(0), piezasTerreno(0), piezasCimientos(0), piezaParedes(0), piezaPisos(0), piezaAcabados(0), faseEnsamblado(7)
+PLAN: comprarTerreno, estudiarParcela, colocarDise, pedirPermisos; colocarCimientos, colocarCastillos, colocarDrenaje, colocarAgua; constParedes, colocarCadena; colocarEscaleras, colocarTuboaInst, colocarCisterna, colocarLosas; colocarPisos, colocarRepExt; colocarAcabadosGen; final
+
+Check whether that plan is secure (y/n)? 
+Search for other plans (y/n)? </textarea>
+  
+
+    </center>
+
+
+<script>
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+				if (event.key == "Enter"){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: 0 })
+					window.postMessage({source: 'getSuggestion', payload: { data: query } } )
+					//displayGrey(query)
+				}
+				else if (event.key == "ArrowRight"){
+					acceptTab(returnedSuggestion)
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			doc.replaceRange(text, pos)
+			suggestionDisplayed = false
+		}
+		}
+		function displayGrey(text){
+		var element = document.createElement('span')
+		element.innerText = text
+		element.style = 'color:grey'
+		var lineIndex = pos.line;
+		editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
+		suggestionDisplayed = true
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			returnedSuggestion = event.data.payload.data
+			displayGrey(event.data.payload.data)
+		}
+		})
+	</script></body></html>

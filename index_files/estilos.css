@@ -1,0 +1,103 @@
+/*
+#fbbdbc
+#fcdcdb
+#a2ebeb
+cceff0 
+#dfcae1
+*/
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fbbdbc;   
+    background-size: 30%;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+ .centrar{
+
+text-align:center;
+
+ }
+ .centrar2{
+
+text-align:center;
+
+ }
+
+ .ali{
+ 	text-align:center;
+ }
+
+ .cua{
+
+ 	background-color:#e3b1c8;
+height: 30vh;
+width: 100vh;
+
+margin: 5%;
+display: flex;
+text-align: center;
+justify-content: center;
+
+
+ }
+ /*.pe{
+ 	 	
+background-color:#84b6f4;
+height: 40vh;
+width: 50vh;
+margin: 5%;
+display: flex;
+text-align: center;
+justify-content: center;
+ ¨*/
+
+
+ #img1{
+ 	float: left;
+ 	margin: 2%;
+ }
+
+ #img2{
+ 	float: right;
+ 	margin: 2%;
+ }
+
+ .lista{
+ 	size: 20;
+
+ }
+
+ .construccion{
+ 	size: 20;
+ 	font: Arial;
+ }
+
+ .mo{
+ 	size: 20;
+ 	font: Arial;
+
+ }
+/*.construccion {
+	display: flex;
+	margin: 20px;
+}*/
+ .centrar ul,
+.centrarol {
+	text-align: left;
+	display: inline-block;
+	size:20;
+	font:Arial;
+
+.centrar-lista {
+	text-align: center;
+}
+
+.centrar-lista ul,
+.centrar-lista ol {
+	text-align: left;
+	display: inline-block;
